@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CashbackHackerTest {
 
-    @Test
+    @org.junit.Test
     void snouldIfTheAmountIsTheNormal() {
        CashbackHacker cashbackHacker = new CashbackHacker();
        int actual = cashbackHacker.remain(2300);
@@ -14,7 +14,7 @@ class CashbackHackerTest {
        assertEquals(expected, actual);
     }
 
-    @Test
+    @org.junit.Test
     void snouldIfTheAmountLessThanTheNorm() {
         CashbackHacker cashbackHacker = new CashbackHacker();
         int actual = cashbackHacker.remain(200);
@@ -22,7 +22,7 @@ class CashbackHackerTest {
         assertEquals(expected, actual);
     }
 
-    @Test
+    @org.junit.Test
     void snouldIfTheAmountIsEqualToTheMinimum() {
         CashbackHacker cashbackHacker = new CashbackHacker();
         int actual = cashbackHacker.remain(1000);
